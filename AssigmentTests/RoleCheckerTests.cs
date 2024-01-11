@@ -31,7 +31,7 @@ namespace AssigmentTests
         [InlineData(RoleChecker.Role.Admin, "Admin")]
         [InlineData(RoleChecker.Role.User, "User")]
         [InlineData(RoleChecker.Role.Guest, "Guest")]
-        public void RoleToString_ReturnsCorrectString(Role role, string expected)
+        public void RoleToString_ReturnsCorrectString(RoleChecker.Role role, string expected)
         {
             // Act
             var result = RoleChecker.RoleToString(role);
